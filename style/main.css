@@ -1,0 +1,8 @@
+body {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    background-color: gainsboro;
+    border-radius: 50%;
+    animation: circle 20s linear;
+}
