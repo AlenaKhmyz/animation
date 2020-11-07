@@ -1,8 +1,45 @@
 body {
+    height: 100%;
+    width: 100%;
+    background-color: bisque;
+} 
+
+.figure {
+    position: absolute;
+    left:0;
+    top:0;
     width: 150px;
     height: 150px;
-    margin: 50px;
-    background-color: gainsboro;
+    background-color: black;
     border-radius: 50%;
-    animation: circle 20s linear;
+    animation: circle 5s infinite linear ;
+}
+
+@keyframes circle {
+    0% {
+        top: 20px;
+        left: 20px;
+    }
+
+    40% {
+      top: 20px;
+      left:  calc(100% - 120px);
+    }
+
+    60% {
+        top: calc(100% - 120px);
+        left: calc(100% - 120px);
+
+    }
+
+    80% {
+      top: calc( 100% - 120px);
+      left: 20px;
+    }
+
+    100%{
+        transform: translate3d(140px, 100px, 0px);
+        animation-timing-function: linear;
+    }
+
 }
